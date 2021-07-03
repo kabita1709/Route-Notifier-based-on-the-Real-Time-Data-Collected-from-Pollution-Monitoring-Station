@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<link rel="stylesheet" type="text/css" href="../style2.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+    overflow: hidden;
+}
+
+</style>
+<body>
+    {{#if error}}
+    <p>{{error}}</p>
+    {{/if}}
+    <div class="container">
+		<div class="img">
+			<img src="img/bg.svg">
+		</div>
+	    <div class="wrapper">
+	        <form method="post" action="/step4">
+				<img src="img/avatar.svg">
+                <h1>WELCOME </h1>
+                <div class="input-data">
+	                <input type="text" name= "startLocation" required>
+		                <label class="far fa-dot-circle"> <b>Start Location</b><label>
+	            </div>
+	            <div class="input-data">
+	                <input type="text" name= "endLocation" required>
+		                <label class="fas fa-map-marker-alt"> <b>End Location</b><label>
+	            </div>
+            	<input type="submit" class="btn" value="Submit">
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

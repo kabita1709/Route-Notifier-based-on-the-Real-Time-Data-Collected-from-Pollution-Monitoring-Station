@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Otp Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../style1.css">
+        
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: montserrat;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: montserrat;
+            background: linear-gradient(120deg,#68aedd, #f3f3f7);
+            height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+    </head>
+    <body>
+        {{#if error}}
+    <p>{{error}}</p>
+    {{/if}}
+    <div class="center">
+        <h1>Login</h1>
+        <h2> Please enter your phone number (in international format, starting with +) to receive the OTP </p> 
+        <form method="post" action="/step2">
+        <div class ="otp">
+            <input type="tel" name="number" required />
+            <span></span>
+            <label>Phone Number</label>
+        </div>
+        <input type="Submit" value="Send code">
+    </form>
+</div>
+
+    </body>
+</html>
