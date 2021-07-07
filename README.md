@@ -1,21 +1,21 @@
 # fyp_21
-:Author: sohamfyp09
-:Email: sohamghosh647@gmail.com
-:Date: 05/07/2021
-:Revision: version1#
+:Author: soham71 & kabita1709
+:Email: sohamghosh647@gmail.com & ksharma1797@gmail.com
+:Date: 07/07/2021
+:Revision: version2#
 :License: Public Domain
 
-= Project: {Web based Route Notifier based on the data from Air Quality Monitor}
+= Project: {Web based Route Notifier based on the data from Air Quality Monitoring Station}
 
-Description: Use the arduino code to read data from sensors and store them onto SD card.
+Description: Use the arduino code to read data from sensors and store them onto SD card. Now Based on the sensor read data provide a user with alternative route to the user so that the polluted places can be avoided in a real time scenario.
 
 == Step 1: Installation
 
 1. Open this file
-2. Edit as you like
+2. Edit as you like.
 3. Release to the World!
 
-== Step 2: Assemble the circuit
+== Step 2: Assemble the circuit and Prepare the Web server system by integrating the API.
 
 Assemble the circuit following the diagram circuit.png attached to the sketch.
 
@@ -31,7 +31,7 @@ Assemble the circuit following the diagram circuit.png attached to the sketch.
  *     GND        GND
  */
 
-== Step 3: Load the code
+== Step 3: Load the code to Arduino 
 
 Upload the code contained in this sketch on to your board
 
@@ -45,14 +45,17 @@ Upload the code contained in this sketch on to your board
   └── ReadMe.adoc         => this file
 ....
 
+== Step 4: Setup the Web server using the nodejs code.
+
 === License
 This project is released under a student License.
 
 === Contributing
-To contribute to this project please contact sohamfyp09 https://id.arduino.cc/sohamfyp09
+To contribute to this project's hardware part please contact sohamfyp09 https://id.arduino.cc/sohamfyp09
+And to cntribute on Github, please mail at ksharma1797@gmail.com.
 
 === BOM
-This project costs around 80$.
+This project costs around 180$.
 
 |===
 | ID | Part name          | Quantity
@@ -68,12 +71,14 @@ This project costs around 80$.
 | 10 | Capacitors         |   2
 | 11 | 2 Position Switch  |   1
 | 12 | Resistors          |   7
-| 13 | USB Connector      |   1
+| 14 | Nodejs setup       |   1
+| 15 | MongoDb Subscript. |   1
+| 16 | MessageBird API    |   1
+| 17 | USB Connector      |   1
+| 18 | Switch             |   1
 
 |===
 
 
 === Help
-This document is written in the _AsciiDoc_ format, a markup language to describe documents.
-If you need help you can search the http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
-or consult the http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
+This document is written keeping in mind the user have no time constraint. For further doubt refer to this: bi.nlm.nih.gov/pmc/articles/PMC6696184/
